@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuestHouse"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:id="@+id/progressbar"
+        android:progress="20"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#EEEEEE"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/musics"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Photographers"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/colorBlack"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard1"
+                                    />
+
+                                <Button
+                                    android:id="@+id/btn_views"
+                                    android:onClick="photo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/birthdaypic"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Artist"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard2"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/musics"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Decorator"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard1"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view1"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/card"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wedding Cakes"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard2"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/tourworld"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Favours Gifts"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard1"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view1"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/ticket"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="DJ  Entertainers"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard2"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/tourworld"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Guest House"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard1"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view1"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/ticket"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Banquet Hall"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard2"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/tourworld"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Catering"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard1"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view1"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/ticket"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mehndi Artist"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard2"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/tourworld"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tour Travel"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard1"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view1"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/ticket"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ticket Booking"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard2"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="100dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard1"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/tourworld"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tour Travel"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard1"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view1"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/imgcard2"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:src="@mipmap/ticket"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginLeft="350dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ticket Booking"
+                                    android:textSize="15sp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_below="@+id/imgcard2"
+                                    android:textColor="@color/colorBlack"
+                                    />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btn_view2"
+                                    android:background="@android:color/transparent"
+                                    />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/colorOrange"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

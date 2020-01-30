@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "820850491953",
+    "firebase_url": "https://partymakersapp2020.firebaseio.com",
+    "project_id": "partymakersapp2020",
+    "storage_bucket": "partymakersapp2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820850491953:android:727142314a1a7b853b0b10",
+        "android_client_info": {
+          "package_name": "com.example.partymakersapp2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820850491953-iuqjh85ugj8cipd1m8enmqndvusm0n5g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.partymakersapp2020",
+            "certificate_hash": "4cda57ee9f2b1666b20ead27dee50e69c83332ff"
+          }
+        },
+        {
+          "client_id": "820850491953-2i21f6n27q6gu9k3sua5jo9kg8cmqeo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBapyOCtiUrDYhTbHTs4-8zzpqSPdB7YWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820850491953-2i21f6n27q6gu9k3sua5jo9kg8cmqeo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
